@@ -65,7 +65,7 @@ class HomeFragment : Fragment() , ClickListener {
         if (!TextUtils.isEmpty(nowPlayingList.id.toString())) {
             var movieID = nowPlayingList.id
             var movieTitle = nowPlayingList.title
-            var action = NowPlayingFragmentDirections.actionNavGalleryToMovieDetailFragment(movieID,movieTitle)
+            var action = HomeFragmentDirections.actionNavHomeToMovieDetailFragment(movieID,movieTitle)
             findNavController().navigate(action)
         }
     }
